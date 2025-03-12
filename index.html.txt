@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Antiques - Timeless Furniture</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f5e9d8; color: #3a2f1e; line-height: 1.6; }
+        
+        /* Navbar */
+        .navbar { position: fixed; top: 0; width: 100%; padding: 20px 5%; background: #5c4033; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #e6b800; font-size: 2rem; font-weight: bold; text-transform: uppercase; }
+        .nav-links a { color: #fff; text-decoration: none; margin: 0 20px; font-size: 1.1rem; }
+        .nav-links a:hover { color: #e6b800; }
+
+
+        /* Hero Section */
+        .hero { height: 90vh; background: url('https://images.unsplash.com/photo-1600210492493-0946911123ea') no-repeat center; background-size: cover; display: flex; align-items: center; padding: 0 5%; position: relative; }
+        .hero::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); }
+        .hero-content { z-index: 1; max-width: 600px; }
+        .hero-content h1 { font-size: 3rem; color: #fff; margin-bottom: 20px; text-shadow: 2px 2px 5px #000; }
+        .hero-content p { font-size: 1.2rem; color: #fff; margin-bottom: 25px; }
+        .btn { background: #e6b800; color: #3a2f1e; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #c99a00; }
+
+
+        /* Products Section */
+        .products { padding: 50px 5%; background: #fff; }
+        .row-title { font-size: 2rem; margin-bottom: 30px; color: #5c4033; text-align: center; }
+        .cards-container { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; }
+        .card { min-width: 250px; height: 350px; background-size: cover; border-radius: 10px; position: relative; transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .card:hover { transform: scale(1.05); }
+        .card-overlay { position: absolute; bottom: 0; width: 100%; background: rgba(92, 64, 51, 0.8); color: #fff; padding: 15px; text-align: center; font-size: 1.1rem; }
+
+
+        /* Footer */
+        .footer { background: #5c4033; color: #fff; padding: 30px 5%; text-align: center; }
+        .footer a { color: #e6b800; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Kenyan Antiques</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#custom">Custom Orders</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kenyan Antiques</h1>
+            <p>Handcrafted furniture with a touch of Kenyan heritage. Timeless pieces for your home.</p>
+            <button class="btn">Explore Now</button>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="row-title">Our Antique Collection</h2>
+        <div class="cards-container">
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')">
+                <div class="card-overlay">Coffee Table - KSh 12,500</div>
+            </div>
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1579656592043-aabebc0738d6')">
+                <div class="card-overlay">TV Stand - KSh 18,000</div>
+            </div>
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1519947486510-46149e73600f')">
+                <div class="card-overlay">King Bed - KSh 35,000</div>
+            </div>
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1519718242749-2e71e5787da9')">
+                <div class="card-overlay">Sofa Set - KSh 45,000</div>
+            </div>
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1601762603398-042dc73d85e3')">
+                <div class="card-overlay">Bookshelf - KSh 15,000</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Custom Orders Section -->
+    <section class="products" id="custom" style="background: #f5e9d8;">
+        <h2 class="row-title">Custom Furniture</h2>
+        <div class="cards-container">
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1594026118704-72e473489b9b')">
+                <div class="card-overlay">Custom Coffee Table - From KSh 14,000</div>
+            </div>
+            <div class="card" style="background-image: url('https://images.unsplash.com/photo-1600210491369-e753d618835f')">
+                <div class="card-overlay">Custom Bed Frame - From KSh 38,000</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer/Contact -->
+    <footer class="footer" id="contact">
+        <p>Contact Us on WhatsApp: <a href="https://wa.me/254706575084" target="_blank">0706 575 084</a></p>
+        <p>Email: info@kenyanantiques.co.ke | Location: Nairobi, Kenya</p>
+        <p>&copy; 2025 Kenyan Antiques. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+
+        // Horizontal scrolling for product cards
+        const containers = document.querySelectorAll('.cards-container');
+        containers.forEach(container => {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            container.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;
+            });
+            container.addEventListener('mouseleave', () => { isDown = false; });
+            container.addEventListener('mouseup', () => { isDown = false; });
+            container.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - container.offsetLeft;
+                const walk = (x - startX) * 2;
+                container.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+</body>
+</html>
